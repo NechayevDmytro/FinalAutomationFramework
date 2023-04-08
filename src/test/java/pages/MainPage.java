@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +15,7 @@ public class MainPage extends BasePage{
         super(driver);
     }
 
+    @Step("Click \"Phones and Electronics\" menu item")
     public PhonesAndElectronicsPage clickPhonesAndElectronics() {
         wait.until(ExpectedConditions.visibilityOf(phonesAndElectronics));
         phonesAndElectronics.click();

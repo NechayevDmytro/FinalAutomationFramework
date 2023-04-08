@@ -1,5 +1,7 @@
 package pages;
 
+import io.qameta.allure.Step;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +16,7 @@ public class PhonesAndElectronicsPage extends BasePage {
         super(driver);
     }
 
+    @Step("Click \"Mobile phones\" picture")
     public MobilePhonesPage clickMobilePhones() {
         wait.until(ExpectedConditions.visibilityOf(mobilePhones));
         mobilePhones.click();

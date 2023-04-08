@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +15,7 @@ public class PhoneProductPage extends BasePage {
         super(driver);
     }
 
+    @Step("Click \"Characteristics\" tab")
     public CharacteristicsPage clickCharacteristics() {
         wait.until(ExpectedConditions.visibilityOf(characteristics));
         characteristics.click();
