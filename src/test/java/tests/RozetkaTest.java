@@ -7,7 +7,8 @@ import java.util.List;
 
 public class RozetkaTest extends BaseTest {
 
-    @Test(description = "Check that phones filtering by screen size works correct.")
+    @Test(description = "Check that phones filtering by screen size works correct.",
+        groups = {"screensize"})
     public void checkScreenSize() {
         mobilePhonesPage = mainPage
                 .clickPhonesAndElectronics()

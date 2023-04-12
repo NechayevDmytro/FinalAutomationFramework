@@ -19,6 +19,7 @@ public class PhoneProductPage extends BasePage {
     public CharacteristicsPage clickCharacteristics() {
         wait.until(ExpectedConditions.visibilityOf(characteristics));
         characteristics.click();
+        wait.until(ExpectedConditions.urlContains("characteristics"));
         return new CharacteristicsPage(driver);
     }
 }

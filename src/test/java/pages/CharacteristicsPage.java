@@ -17,7 +17,7 @@ public class CharacteristicsPage extends BasePage {
 
     @Step("Get screen size value")
     public String getScreenSize() {
-        wait.until(ExpectedConditions.visibilityOf(screenSize));
+        wait.until(ExpectedConditions.not(ExpectedConditions.stalenessOf(screenSize)));
         return screenSize.getText();
     }
 }

@@ -21,7 +21,7 @@ public class BaseTest {
     protected MainPage mainPage;
     protected MobilePhonesPage mobilePhonesPage;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void initBrowser() {
         WebDriverManager.chromedriver().arch64().browserVersion("111").setup();
         ChromeOptions options = new ChromeOptions();
@@ -30,13 +30,13 @@ public class BaseTest {
         driver = new ChromeDriver(options);
     }
 
-    @BeforeMethod(dependsOnMethods = {"initBrowser"})
+    @BeforeMethod(dependsOnMethods = {"initBrowser"}, alwaysRun = true)
     public void openRztk() {
         driver.get("https://rozetka.com.ua/");
         mainPage = new MainPage(driver);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
     }
