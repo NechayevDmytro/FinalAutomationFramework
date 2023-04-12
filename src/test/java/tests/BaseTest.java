@@ -9,10 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import pages.MainPage;
 import pages.MobilePhonesPage;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Collections;
 import java.util.Properties;
 
@@ -46,7 +44,7 @@ public class BaseTest {
         try {
             FileInputStream fis = new FileInputStream("src/test/resources/data.properties");
             prop.load(fis);
-        } catch (IOException e) {}
+        } catch (IOException ignored) {}
         return prop.getProperty(propName);
     }
 }
