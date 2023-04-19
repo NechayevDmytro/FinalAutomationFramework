@@ -1,4 +1,4 @@
-package pages;
+package ui.pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;

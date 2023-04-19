@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" name="/Users/dimarik/IdeaProjects/FinalAutomationFramework">
         <classes>
-            <class name="tests.RozetkaTest"/>
+            <class name="ui.tests.RozetkaTest"/>
         </classes>
     </test>
 </suite>

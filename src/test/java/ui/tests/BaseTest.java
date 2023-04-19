@@ -1,4 +1,4 @@
-package tests;
+package ui.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -6,8 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pages.MainPage;
-import pages.MobilePhonesPage;
+import ui.pages.MainPage;
+import ui.pages.MobilePhonesPage;
 
 import java.io.FileInputStream;
 import java.io.IOException;
